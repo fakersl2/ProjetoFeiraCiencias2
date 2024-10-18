@@ -1,3 +1,4 @@
+<head><script src="https://cdn.tailwindcss.com"></script></head>
 <?php
 // Função simples para mapear as rotas
 function carregarPagina($rota) {
