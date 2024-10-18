@@ -4,34 +4,34 @@
 function carregarPagina($rota) {
     switch ($rota) {
         case 'avaliacoes':
-            require 'app/src/pages/avaliacoes.php';
+            require 'pages/avaliacoes.php';
             break;
         case 'cadastro':
-            require 'app/src/pages/cadastro.php';
+            require 'pages/cadastro.php';
             break;
         case 'footer':
-            require 'app/src/pages/footer.php';
+            require 'pages/footer.php';
             break;
         case 'gradient':
-            require 'app/src/pages/gradient.php';
+            require 'pages/gradient.php';
             break;
         case 'headernav':
-            require 'app/src/pages/headernav.php';
+            require 'pages/headernav.php';
             break;
         case 'home':
-            require 'app/src/pages/home.php';
+            require 'pages/home.php';
             break;
         case 'login':
-            require 'app/src/pages/login.php';
+            require 'pages/login.php';
             break;
         case 'projetos':
-            require 'app/src/pages/projetos.php';
+            require 'pages/projetos.php';
             break;
         case 'inicio':
-            require 'app/src/pages/inicio.php';
+            require 'pages/inicio.php';
             break;
         default:
-            require 'app/src/pages/paginaErro.php'; // Página de erro
+            require 'pages/paginaErro.php'; // Página de erro
             break;
     }
 }
