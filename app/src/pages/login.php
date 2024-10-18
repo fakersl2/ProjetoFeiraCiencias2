@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('../../../backend/conexao.php'); // Inclui o arquivo de conexão
+include '../../../backend/conexao.php'; // Inclui o arquivo de conexão
 
 // Verifica se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
