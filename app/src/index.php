@@ -1,8 +1,24 @@
 <head><link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /></head><body><script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script></body>
 <?php
 // Função simples para mapear as rotas
-require('../backend/conexao.php');
-require('../backend/models.php');
+//teste de conexão
+$servername = "db"; // ou "localhost"
+$username = "user"; 
+$password = "root"; 
+$dbname = "projetofeiraciencias"; 
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+} else {
+    echo "Conexão bem-sucedida!";
+}
+$conn->close();
+
+
+
+
 function carregarPagina($rota) {
     switch ($rota) {
         case 'avaliacoes':
