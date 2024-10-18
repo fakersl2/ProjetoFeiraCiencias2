@@ -11,4 +11,4 @@ COPY . .
 EXPOSE 10000
 
 # Comando para iniciar o servidor embutido do PHP
-CMD ["php", "-S", "0.0.0.0:10000", "-t", "app/src/index.php"]
+CMD ["php", "-S", "0.0.0.0:10000", "-t", "app/src"]
