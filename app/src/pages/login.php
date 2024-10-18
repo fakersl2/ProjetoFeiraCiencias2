@@ -39,7 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="path/to/your/styles.css"> <!-- Substitua pelo caminho correto para o seu CSS -->
 </head>
 <body>
     <div class="flex items-center justify-center min-h-screen mx-2 bg-gray-100 select-none">
