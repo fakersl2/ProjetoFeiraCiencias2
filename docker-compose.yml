@@ -8,6 +8,6 @@ db:
     MYSQL_USER: user
     MYSQL_PASSWORD: root
   ports:
-    - "10000:10000"
+    - "3306:3306"  # Mudado para a porta padrão do MySQL
   volumes:
-    - db_data:/var/lib/mysql  # Persistindo dados do MySQL
+    - db_data:/var/lib/mysql
