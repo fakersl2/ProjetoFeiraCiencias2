@@ -1,17 +1,19 @@
 <?php
 // Carregar variáveis de ambiente manualmente
-$host = getenv('PGHOST');
-$db = getenv('PGDATABASE');
-$user = getenv('PGUSER');
-$pass = getenv('PGPASSWORD');
+$host = getenv('PGHOST') ?: 'postgres.railway.internal';
+$db = getenv('PGDATABASE') ?: 'railway';
+$user = getenv('PGUSER') ?: 'postgres';
+$pass = getenv('PGPASSWORD') ?: 'eoHLxHGzNMJvnEkdwKVYieTvQaaCBjjY';
 
 try {
+    // Criar a conexão usando PDO
     $conn = new PDO("pgsql:host=$host;dbname=$db", $user, $pass);
+    // Definir o modo de erro do PDO para exceção
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     echo "Conexão bem-sucedida!<br>";
 
-    // Criar tabela 'usuarios'
+    // Criar tabela
     $sql = "CREATE TABLE IF NOT EXISTS usuarios (
         id SERIAL PRIMARY KEY,
         nome VARCHAR(255),
@@ -31,6 +33,7 @@ try {
 } catch (PDOException $e) {
     die("Erro de conexão: " . $e->getMessage());
 } finally {
+    // Fechar a conexão
     $conn = null;
 }
 ?>
