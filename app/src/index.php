@@ -20,9 +20,6 @@ function carregarPagina($rota) {
         case 'headernav':
             require 'pages/headernav.php';
             break;
-        case 'home':
-            require 'pages/home.php';
-            break;
         case 'login':
             require 'pages/login.php';
             break;
