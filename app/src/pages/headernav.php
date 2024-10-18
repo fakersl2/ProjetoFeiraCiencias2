@@ -72,4 +72,20 @@ $userName = fetchUserName($userId); // Busca o nome do usuário
                     <ul class="py-2" aria-labelledby="user-menu-button">
                         <li>
                             <a 
-           
+                                href="" 
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                            >
+                                Trocar de conta
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="items-center justify-around hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+                <ul class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <!-- Adicione links de navegação aqui, se necessário -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
