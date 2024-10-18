@@ -1,0 +1,13 @@
+db:
+  image: mysql:5.7
+  container_name: my_mysql_db
+  restart: always
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABASE: projetofeiraciencias
+    MYSQL_USER: user
+    MYSQL_PASSWORD: root
+  ports:
+    - "10000:10000"
+  volumes:
+    - db_data:/var/lib/mysql  # Persistindo dados do MySQL
