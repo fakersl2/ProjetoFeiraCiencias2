@@ -1,5 +1,5 @@
 <?php
-include '../../../backend/conexao.php';
+include '../../backend/pg_connect.php'; // Inclui o arquivo de conexão
 
 // Inicia a sessão para usar a autenticação
 session_start();

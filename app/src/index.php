@@ -1,7 +1,7 @@
 <head><link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /></head><body><script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script></body>
 <?php
 // Função simples para mapear as rotas
-require('../backend/conexao.php');
+require('../backend/pg_connect.php');
 require('../backend/models.php');
 function carregarPagina($rota) {
     switch ($rota) {
